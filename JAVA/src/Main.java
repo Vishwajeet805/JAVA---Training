@@ -24,9 +24,9 @@ class Main {
         System.out.println(aa);
 
 
-        Scanner sc = new Scanner(System.in);
+        Scanner sc2 = new Scanner(System.in);
         System.out.print("Enter a string: ");
-        String str = sc.nextLine();
+        String str = sc2.nextLine();
 
         int left = 0;
         int right = str.length() - 1;
