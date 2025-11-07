@@ -2,20 +2,14 @@ import java.util.Scanner;
 
 public class VowelConsonant {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a character: ");
-        char ch = sc.next().toLowerCase().charAt(0);
+       String sre ="hello";
+       int val =0;
+       for (char ch:sre.toCharArray()){
+           if("aeiou".indexOf(ch)!=-1){
+               val++;
+           }
+       }
+        System.out.println(val);
 
-        switch (ch) {
-            case 'a':
-            case 'e':
-            case 'i':
-            case 'o':
-            case 'u':
-                System.out.println("Vowel");
-                break;
-            default:
-                System.out.println("Consonant");
-        }
     }
 }
