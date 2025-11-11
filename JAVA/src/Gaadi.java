@@ -14,26 +14,26 @@ class Gaadi{
         c1.brand = "Toyota";
         c1.model = "Fortuner";
         c1.price = 4200000;
+        c1.display();
 
         Car c2 = new Car();
         c2.brand = "Hyundai";
         c2.model = "Creta";
         c2.price = 1500000;
+        c2.display();
 
         Car c3 = new Car();
         c3.brand = "Tata";
         c3.model = "Nexon";
         c3.price = 1200000;
+        c3.display();
 
         Car c4 = new Car();
         c4.brand = "Mahindra";
         c4.model = "XUV700";
         c4.price = 2000000;
-
-        c1.display();
-        c2.display();
-        c3.display();
         c4.display();
+
 
     }
 }
