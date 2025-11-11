@@ -7,7 +7,7 @@ class Student {
         System.out.println("Name: " + name);
         System.out.println("Roll No: " + rollNumber);
         System.out.println("Marks: " + marks);
-        System.out.println("-------------------");
+        System.out.println("\n");
     }
 }
 public class StudentClass{
