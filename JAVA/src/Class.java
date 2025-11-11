@@ -1,4 +1,4 @@
-class Gaadi
+class Gaddi
 {
     String name;
     void display(){
@@ -7,7 +7,7 @@ class Gaadi
 }
 class Class{
     public static void main(String[] args){
-        Gaadi obj=new Gaadi();
+        Gaddi obj=new Gaddi();
         obj.display();
     }
 }
