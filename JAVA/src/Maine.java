@@ -1,5 +1,4 @@
-import java.util.Scanner;
-class Main {
+class Maine {
     public static void main(String[] args) {
 //        System.out.println("Hii");
 //        short b=5;
