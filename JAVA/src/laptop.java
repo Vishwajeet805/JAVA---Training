@@ -15,10 +15,9 @@ class Laptop {
         System.out.println("Price: ₹" + price);
         System.out.println("---------------------");
     }
-}
 
-public class laptop {
-    static void main(String[] args) {
+
+    public static void main(String[] args) {
         Laptop l1 = new Laptop("HP", 8, 55000);
         Laptop l2 = new Laptop("Dell", 16, 72000);
 

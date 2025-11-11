@@ -7,8 +7,7 @@ class Car {
         System.out.println("Car Model:"+ model);
         System.out.println("Car Price:"+ price);
     }
-}
-class Gaadi{
+
     static void main(String[] args) {
         Car c1 = new Car();
         c1.brand = "Toyota";

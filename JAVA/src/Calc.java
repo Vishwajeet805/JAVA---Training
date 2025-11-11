@@ -15,8 +15,7 @@ class Calculator{
         else
             return x/y;
     }
-}
-public class Calc {
+
     static void main() {
         Calculator calc=new Calculator();
         System.out.println("Add: " + calc.add(10, 5));

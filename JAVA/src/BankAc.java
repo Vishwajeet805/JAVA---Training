@@ -16,8 +16,6 @@ class BankAccount {
         System.out.println("Current Balance:"+ balance );}
     }
 
-}
-public class BankAc {
     static void main(String[] args) {
         BankAccount Acc1=new BankAccount();
         Acc1.accountHolder="SHRUTI";

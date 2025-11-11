@@ -9,10 +9,7 @@ class Movie {
         System.out.println("Release Year: " + releaseYear);
 
     }
-}
-
-public class Movies {
-    public static void main(String[] args) {
+     static void main(String[] args) {
         Movie m1 = new Movie();
         m1.name = "Inception";
         m1.rating = 8.8;

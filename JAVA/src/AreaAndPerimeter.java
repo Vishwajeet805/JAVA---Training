@@ -8,8 +8,6 @@ class Rectangle {
         System.out.println("Perimeter:"+ 2*(length+breadth));
     }
 
-}
-public class AreaAndPerimeter {
     static void main(String[] args) {
         Rectangle r1= new Rectangle();
         r1.length=3;

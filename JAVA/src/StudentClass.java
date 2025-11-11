@@ -9,8 +9,7 @@ class Student {
         System.out.println("Marks: " + marks);
         System.out.println("\n");
     }
-}
-public class StudentClass{
+
     public static void main(String[] args) {
         Student s1=new Student();
         s1.name="Shruti";

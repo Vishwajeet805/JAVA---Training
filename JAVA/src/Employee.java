@@ -14,8 +14,7 @@ class CorporateMajdoor{
         System.out.println("Salary Increment:"+x);
         System.out.println("Final Salary:"+Salary);
     }
-}
-public class Employee {
+
     static void main() {
         CorporateMajdoor Emp1=new CorporateMajdoor();
         Emp1.Name="Shruti";

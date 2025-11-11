@@ -8,8 +8,7 @@ class Circle{
     void circumference(){
         System.out.println("Circumference:"+2*3.14*radius);
     }
-}
-public class Gola {
+
     static void main() {
         Circle gola1=new Circle();
         gola1.radius=2;

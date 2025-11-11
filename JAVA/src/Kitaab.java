@@ -13,8 +13,7 @@ class Book{
         System.out.println("Discount Applied:"+x);
         System.out.println("Price:"+ (Price-Discount));
     }
-}
-public class Kitaab {
+
     static void main() {
         Book b1=new Book();
         b1.Title="The Naga Warriors";
