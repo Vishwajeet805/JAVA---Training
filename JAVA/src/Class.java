@@ -1,4 +1,5 @@
-class Car{
+class Gaadi
+{
     String name;
     void display(){
         System.out.println("hello");
@@ -6,7 +7,7 @@ class Car{
 }
 class Class{
     public static void main(String[] args){
-        Car obj=new Car();
+        Gaadi obj=new Gaadi();
         obj.display();
     }
 }

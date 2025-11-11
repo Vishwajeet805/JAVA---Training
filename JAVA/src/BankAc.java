@@ -31,7 +31,6 @@ public class BankAc {
         Acc2.accountNumber=241378;
         Acc2.Deposit(1000);
         Acc2.Withdraw(5000);
-
     }
 }
 
