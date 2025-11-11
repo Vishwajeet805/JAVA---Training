@@ -1,16 +1,14 @@
 class Laptop {
     String brand;
-    int ram; // in GB
+    int ram;
     double price;
 
-    // Constructor to initialize values
     Laptop(String brand, int ram, double price) {
         this.brand = brand;
         this.ram = ram;
         this.price = price;
     }
 
-    // Method to display laptop details
     void display() {
         System.out.println("Brand: " + brand);
         System.out.println("RAM: " + ram + " GB");
@@ -19,8 +17,8 @@ class Laptop {
     }
 }
 
-public class LapTop {
-    public static void main(String[] args) {
+public class laptop {
+    static void main(String[] args) {
         Laptop l1 = new Laptop("HP", 8, 55000);
         Laptop l2 = new Laptop("Dell", 16, 72000);
 
