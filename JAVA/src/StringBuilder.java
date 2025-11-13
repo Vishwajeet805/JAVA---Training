@@ -1,4 +1,4 @@
-class Main {
+class stringbuild {
         public static void main(String[] args) {
             String s = "aaabbc";
             StringBuilder result = new StringBuilder();
