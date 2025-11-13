@@ -7,7 +7,6 @@ class Movie {
         System.out.println("Name: " + name);
         System.out.println("Rating: " + rating);
         System.out.println("Release Year: " + releaseYear);
-
     }
      static void main(String[] args) {
         Movie m1 = new Movie();
