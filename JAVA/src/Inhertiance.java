@@ -13,9 +13,15 @@ class Puppy extends Dog{
         System.out.println("Walk");
     }
 }
+class Kutta extends Dog{
+    void bhonk(){
+        System.out.println("Bhaooooooo");
+    }
+}
 class Main{
     static void main() {
-
+    Kutta kutta=new Kutta();
+    kutta.bhonk();
     Puppy doggy=new Puppy();
     doggy.eat();
     doggy.bark();
