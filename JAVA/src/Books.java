@@ -8,7 +8,7 @@ class Novel extends Book{
         System.out.println("Novel is Interesting");
     }
 }
-class BOOK{
+class BookMain{
     static void main() {
         Novel m=new Novel();
         m.Read();
