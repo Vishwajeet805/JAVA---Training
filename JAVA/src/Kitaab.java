@@ -1,4 +1,4 @@
-class Book{
+class Books{
     String Title;
     String Author;
     int Price;
@@ -15,7 +15,7 @@ class Book{
     }
 
     static void main() {
-        Book b1=new Book();
+        Books b1=new Books();
         b1.Title="The Naga Warriors";
         b1.Author="Akshat Gupta";
         b1.Price=100;
