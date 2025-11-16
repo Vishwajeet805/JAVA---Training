@@ -1,5 +1,5 @@
+package Strings;
 public class StringQuestions {
-
     public static void main(String[] args) {
 
         // 1️⃣ Difference between String, StringBuilder, and StringBuffer

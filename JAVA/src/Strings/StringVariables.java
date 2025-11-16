@@ -1,5 +1,5 @@
+package Strings;
 import java.util.Scanner;
-
 public class StringVariables {
     static int a=5;
     int b=9;

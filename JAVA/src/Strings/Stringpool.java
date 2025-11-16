@@ -1,5 +1,5 @@
+package Strings;
 public class Stringpool {
-
     public static void main(String[] args) {
         System.out.println("3️⃣ String Pool Example:");
         String p1 = "Hello";
