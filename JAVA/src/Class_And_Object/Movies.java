@@ -1,4 +1,6 @@
+    package Class_And_Object;
 class Movie {
+
     String name;
     double rating;
     int releaseYear;

@@ -1,3 +1,4 @@
+package Class_And_Object;
 class Student {
     String name;
     int rollNumber;
@@ -7,7 +8,6 @@ class Student {
         this.rollNumber = rollNumber;
         this.marks = marks;
 }
-
 void display() {
         System.out.println("Name: " + name);
         System.out.println("Roll No: " + rollNumber);

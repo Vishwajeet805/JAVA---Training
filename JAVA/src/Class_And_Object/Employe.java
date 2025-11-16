@@ -1,3 +1,4 @@
+package Class_And_Object;
 class CorporateMajdoor{
     String Name;
     String EmpID;
