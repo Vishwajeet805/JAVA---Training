@@ -1,17 +1,16 @@
-
 class animal{
     void eat(){
         System.out.println("burger");
     }
 }
-class dog extends animal{
+class dog extends animal {
     void eat(){
         System.out.println("dog_food");
     }
 }
-class over_riding {
-    public static void main(String[] args) {
-        animal a = new dog();
+public class MethodOveriding {
+    static void main() {
+      dog a=new dog();
         a.eat();
     }
 }
