@@ -1,4 +1,4 @@
- class MethodOverRidding {
+ class MethodOverLoading {
     void add(int a){
         System.out.println(a);
     }
@@ -10,7 +10,7 @@
     }
 
      static void main() {
-         MethodOverRidding m=new MethodOverRidding();
+         MethodOverLoading m=new MethodOverLoading();
          m.add(2);
          m.add(2,4);
          m.add(1,6,7);

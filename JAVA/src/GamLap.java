@@ -14,6 +14,7 @@ class GamingLaptop extends Laptops {
     }
 }
 
+
 class GamLap {
     static void main(String[] args) {
         GamingLaptop mon = new GamingLaptop();
