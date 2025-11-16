@@ -8,7 +8,7 @@ class dog extends animal {
         System.out.println("dog_food");
     }
 }
-public class MethodOveriding {
+class MethodOveriding {
     static void main() {
       dog a=new dog();
         a.eat();
