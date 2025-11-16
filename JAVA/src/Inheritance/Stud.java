@@ -1,3 +1,4 @@
+package Inheritance;
 class Person {
     void Name() {
         System.out.println("Name: Shourya");

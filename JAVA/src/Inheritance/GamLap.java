@@ -1,3 +1,4 @@
+    package Inheritance;
 class Device {
     void PowerOn() {
         System.out.println("Powering On");
