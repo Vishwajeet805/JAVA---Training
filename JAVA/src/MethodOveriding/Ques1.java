@@ -13,7 +13,7 @@ class dog extends animal {
 }
 public class Ques1 {
     static void main() {
-        animal a = new dog();
+        dog a = new dog();
         a.eat();
     }
 }
