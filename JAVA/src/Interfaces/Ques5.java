@@ -1,7 +1,15 @@
 package Interfaces;
+interface Vehicle {
+    default void start(){
+        System.out.println("Vehicle is starting.");
+    }
+}
+class Car implements Vehicle{
 
-public class Ques5 {
+}
+class Ques5Main {
     static void main() {
-
+    Car BMW=new Car();
+    BMW.start();
     }
 }
