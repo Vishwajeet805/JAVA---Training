@@ -11,5 +11,4 @@ class AddElement {
         System.out.println(set);
     }
 }
-{
-}
+
