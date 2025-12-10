@@ -1,7 +1,7 @@
-package FileCRUD;
+public package FileCRUD;
 import java.io.*;
 
-public class Creation {
+public class Reading {
     static void main(String[] args) {
         try {
             File file =new File("i.html");
@@ -14,7 +14,7 @@ public class Creation {
             System.out.println(e);
         }
         createData();
-       
+        readFileData();
     }
 
     static void createData() {
@@ -29,4 +29,16 @@ public class Creation {
 
     }
 
+    static void readFileData() {
+        try{
+            FileReader reader=new FileReader("index.html");
+            int ch;
+            while((ch= reader.read())!=-1){
+                System.out.print((char)ch);
+            }
+
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
 }
