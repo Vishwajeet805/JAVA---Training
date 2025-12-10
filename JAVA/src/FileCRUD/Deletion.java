@@ -1,7 +1,7 @@
 package FileCRUD;
 import java.io.*;
 
-public class Reading {
+public class Deletion {
     static void main(String[] args) {
         try {
             File file =new File("i.html");
@@ -15,6 +15,7 @@ public class Reading {
         }
         createData();
         readFileData();
+        deleteData();
     }
 
     static void createData() {
@@ -41,4 +42,17 @@ public class Reading {
             System.out.println(e);
         }
     }
+    static void deleteData(){
+        try{
+            File file = new File("index.html");
+            if(file.delete()){
+                System.out.println("File deleted"+file.getName());
+            }else {
+
+            }
+        }catch(Exception e){
+            System.out.println(e);
+        }
+    }
 }
+ 

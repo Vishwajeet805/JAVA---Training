@@ -14,7 +14,6 @@ public class Creation {
             System.out.println(e);
         }
         createData();
-       
     }
 
     static void createData() {
