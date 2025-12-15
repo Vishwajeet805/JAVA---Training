@@ -1,7 +1,6 @@
 package Iterator;
 
 import java.util.*;
-import java.util.ListIterator;
 
 class Ques3 {
     public static void main(String[] args) {
