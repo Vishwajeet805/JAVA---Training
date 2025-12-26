@@ -1,3 +1,4 @@
+package Miscellaneous;
 import java.util.Stack;
 
 class NextGreaterElement {
