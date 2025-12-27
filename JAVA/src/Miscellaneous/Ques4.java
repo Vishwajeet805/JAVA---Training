@@ -1,3 +1,4 @@
+package Miscellaneous;
 class LongestPalindrome {
     static String longestPalindrome(String s) {
         if (s.length() < 2) return s;
