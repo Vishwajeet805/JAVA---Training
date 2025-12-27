@@ -1,4 +1,4 @@
-
+ package Miscellaneous;
   abstract class  Animals{
         void eat(){
             System.out.println("burger");
@@ -26,7 +26,7 @@
         static void main() {
             Animals a = new Dogs();
             a.eat();
-            a.staticp();
+            Animals.staticp();
             Dogs s2=(Dogs)a;
             s2.sleep();
             s2.attack();

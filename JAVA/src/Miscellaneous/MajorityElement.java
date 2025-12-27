@@ -1,3 +1,4 @@
+ package Miscellaneous;
 import java.util.*;
 class MajorityN3 {
     public static List<Integer> majorityElement(int[] nums) {

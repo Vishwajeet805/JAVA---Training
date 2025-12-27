@@ -1,4 +1,5 @@
-import java.util.*;
+ package Miscellaneous;
+ import java.util.*;
 class SlidingWindowMax {
     public static int[] maxSlidingWindow(int[] a, int k) {
         Deque<Integer> dq = new ArrayDeque<>();

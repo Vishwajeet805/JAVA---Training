@@ -1,4 +1,5 @@
-class Books{
+ package Miscellaneous;
+ class Books{
     String Title;
     String Author;
     int Price;

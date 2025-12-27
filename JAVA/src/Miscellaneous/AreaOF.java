@@ -1,3 +1,4 @@
+ package Miscellaneous;
  class AreaOF {
     void Area(double r){
         System.out.println("Area of Circle="+(3.14*r*r));
