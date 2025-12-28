@@ -22,19 +22,3 @@ public class Ques7 {
         A.DisplayDetails('A',"DPS");
     }
 }
-echo 'Sat Nov 22 2025 00:00:00 GMT+0530 (India Standard Time) -> (0)' >> foobar.txt
-git add foobar.txt
-git commit --date='Sat Nov 22 2025 00:00:00 GMT+0530 (India Standard Time)' -m 'Sat Nov 22 2025 00:00:00 GMT+0530 (India Standard Time)'
-echo 'Sat Nov 22 2025 00:00:00 GMT+0530 (India Standard Time) -> (1)' >> foobar.txt
-git add foobar.txt
-git commit --date='Sat Nov 22 2025 00:00:00 GMT+0530 (India Standard Time)' -m 'Sat Nov 22 2025 00:00:00 GMT+0530 (India Standard Time)'
-echo 'Sat Nov 22 2025 00:00:00 GMT+0530 (India Standard Time) -> (2)' >> foobar.txt
-git add foobar.txt
-git commit --date='Sat Nov 22 2025 00:00:00 GMT+0530 (India Standard Time)' -m 'Sat Nov 22 2025 00:00:00 GMT+0530 (India Standard Time)'
-echo 'Sat Nov 22 2025 00:00:00 GMT+0530 (India Standard Time) -> (3)' >> foobar.txt
-git add foobar.txt
-git commit --date='Sat Nov 22 2025 00:00:00 GMT+0530 (India Standard Time)' -m 'Sat Nov 22 2025 00:00:00 GMT+0530 (India Standard Time)'
-echo 'Sat Nov 22 2025 00:00:00 GMT+0530 (India Standard Time) -> (4)' >> foobar.txt
-git add foobar.txt
-git commit --date='Sat Nov 22 2025 00:00:00 GMT+0530 (India Standard Time)' -m 'Sat Nov 22 2025 00:00:00 GMT+0530 (India Standard Time)'
-git push 
