@@ -1,68 +1,160 @@
 package LinkedList;
 
-class Node{
+class Node {
     int data;
     Node next;
-    public Node(int data){
-        this.data=data;
-        this.next=null;
+
+    public Node(int data) {
+        this.data = data;
+        this.next = null;
     }
 }
-class MyLinekedlist{
+
+class MyLinkedList {
     Node head;
-    void inset(int data){
-        Node newNode=new Node(data);
-        newNode.next=head;
-        head=newNode;
-    }
-    void display(){
-        Node temp=head;
-        while(temp!=null){
-            System.out.print(temp.data + "->");
-            temp=temp.next;
-        }
-            System.out.print("NULL");
-    }
-    void insatlast(int data){
-        Node temp= head;
-        Node newnode=new Node(data);
-        while(temp.next!=null){
-            temp=temp.next;
-        }
-        if(head==null){
-            head=newnode;
-        }
-        temp.next=newnode;
 
+    // insert at beginning
+    void insertFirst(int data) {
+        Node newNode = new Node(data);
+        newNode.next = head;
+        head = newNode;
     }
-    void delstart(){
-        head=head.next;
+
+    // insert at end
+    void insertLast(int data) {
+        Node newNode = new Node(data);
+        if (head == null) {
+            head = newNode;
+            return;
+        }
+        Node temp = head;
+        while (temp.next != null) {
+            temp = temp.next;
+        }
+        temp.next = newNode;
     }
-    void delnode(int data){
-        Node temp=head;
-        while(temp.next!=null){
-            if(temp.next.data==data){
-                temp.next=temp.next.next;
-                break;
+
+    // insert at specific position (0-based index)
+    void insertAtPos(int data, int pos) {
+        if (pos == 0) {
+            insertFirst(data);
+            return;
+        }
+        Node temp = head;
+        for (int i = 0; i < pos - 1 && temp != null; i++) {
+            temp = temp.next;
+        }
+        if (temp == null) return;
+        Node newNode = new Node(data);
+        newNode.next = temp.next;
+        temp.next = newNode;
+    }
+
+    // delete first node
+    void deleteFirst() {
+        if (head != null) {
+            head = head.next;
+        }
+    }
+
+    // delete last node
+    void deleteLast() {
+        if (head == null || head.next == null) {
+            head = null;
+            return;
+        }
+        Node temp = head;
+        while (temp.next.next != null) {
+            temp = temp.next;
+        }
+        temp.next = null;
+    }
+
+    // delete node by value
+    void deleteByValue(int data) {
+        if (head == null) return;
+        if (head.data == data) {
+            head = head.next;
+            return;
+        }
+        Node temp = head;
+        while (temp.next != null) {
+            if (temp.next.data == data) {
+                temp.next = temp.next.next;
+                return;
             }
-            temp=temp.next;
+            temp = temp.next;
         }
+    }
 
+    // search element
+    boolean search(int key) {
+        Node temp = head;
+        while (temp != null) {
+            if (temp.data == key) return true;
+            temp = temp.next;
+        }
+        return false;
+    }
+
+    // count nodes
+    int size() {
+        int count = 0;
+        Node temp = head;
+        while (temp != null) {
+            count++;
+            temp = temp.next;
+        }
+        return count;
+    }
+
+    // reverse linked list
+    void reverse() {
+        Node prev = null;
+        Node curr = head;
+        Node next;
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+    }
+
+    // display list
+    void display() {
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.data + " -> ");
+            temp = temp.next;
+        }
+        System.out.println("NULL");
     }
 }
-class LinkedMan{
-    static void main() {
-        MyLinekedlist ll=new MyLinekedlist();
-        ll.inset(10);
-        ll.inset(20);
-        ll.inset(30);
-        ll.inset(40);
-        ll.inset(50);
-        ll.inset(60);
-        ll.inset(70);
-        ll.insatlast(100);
-        ll.delstart();
-        ll.delnode(40);
+
+class LinkedMan {
+    public static void main(String[] args) {
+        MyLinkedList ll = new MyLinkedList();
+
+        ll.insertFirst(10);
+        ll.insertFirst(20);
+        ll.insertFirst(30);
+        ll.insertLast(40);
+        ll.insertAtPos(25, 2);
+
+        ll.display();
+
+        ll.deleteFirst();
+        ll.deleteLast();
+        ll.deleteByValue(25);
+
+        ll.display();
+
+        System.out.println("Search 20: " + ll.search(20));
+        System.out.println("Size: " + ll.size());
+
+        ll.reverse();
         ll.display();
     }
 }
